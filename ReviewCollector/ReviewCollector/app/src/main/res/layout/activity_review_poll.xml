@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_review_poll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pk.reviewcollector.ReviewPoll">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#fff"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:background="@drawable/fullshadow"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textStyle="bold"
+                android:id="@+id/pollname"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:textSize="30dp"
+                android:text="Pollname"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:text="Question?"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/pollquestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/radiogroupOpitions"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:text="op1"
+                            android:id="@+id/op1"
+                            android:checked="true"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:text="op2"
+                            android:id="@+id/op2"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:text="op2"
+                            android:id="@+id/op3"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:text="op4"
+                            android:id="@+id/op4"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:text="op4"
+                            android:id="@+id/op5"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:text="op4"
+                            android:id="@+id/op6"
+                            android:layout_height="wrap_content" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Status"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="0dp"
+                        android:id="@+id/exit"
+                        android:layout_weight="2"
+                        android:background="@drawable/buttonshape"
+                        android:text="Exit"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:layout_height="match_parent" />
+                    <Button
+                        android:layout_width="0dp"
+                        android:id="@+id/next"
+                        android:layout_weight="2"
+                        android:background="@drawable/buttonshape"
+                        android:text="Next"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

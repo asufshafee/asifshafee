@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/fullshadow"
+    android:layout_margin="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:id="@+id/info"
+            android:textColor="@color/textcolor"
+            android:textSize="25sp"
+            android:text="Please Provide Poll Info."/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:id="@+id/polltittle"
+            android:textColor="@android:color/black"
+            android:hint="Poll Tittle"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:id="@+id/polldescription"
+            android:textColor="@android:color/black"
+            android:hint="Description"
+            android:layout_marginTop="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/NoofQuestions"
+            android:layout_width="match_parent"
+            android:textColor="#00f0ff"
+            android:layout_marginTop="10dp"
+            android:entries="@array/NoofQuestions"
+            android:layout_height="40dp">
+
+        </Spinner>
+
+        <Spinner
+
+            android:id="@+id/Noofdays"
+            android:layout_width="match_parent"
+            android:entries="@array/Noofdays"
+            android:layout_marginTop="5dp"
+            android:textColor="#00f0ff"
+            android:layout_height="40dp"></Spinner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:id="@+id/btncontinue"
+                android:background="@drawable/buttonshape"
+                android:textColor="@android:color/white"
+                android:text="Continue"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

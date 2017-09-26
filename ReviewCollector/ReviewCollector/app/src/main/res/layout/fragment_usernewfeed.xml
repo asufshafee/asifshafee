@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/layoutshadow"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/polltittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tittle"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/polldescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We What Justice"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="11/11/2017 20.20 PM"
+            />
+
+        <TextView
+            android:id="@+id/endtIme"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="11/11/2017 20.20 PM" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="By"
+                android:id="@+id/groupnamefor"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Group Name"
+                android:gravity="center"
+                android:id="@+id/groupname"
+                android:textColor="@color/textcolor"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Review Poll"
+            android:id="@+id/reviewpoll"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonshape"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

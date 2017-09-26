@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/fullshadow"
+        android:padding="20dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:textSize="30dp"
+            android:text="Create Group"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:id="@+id/txtgroupname"
+                android:textColor="@android:color/black"
+                android:hint="Name"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:hint="Description"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtgroupdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Rules"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textgrouprules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/btngroupexit"
+                    android:layout_weight="2"
+                    android:background="@drawable/buttonshape"
+                    android:text="Exit"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/btngroupcreate"
+                    android:layout_weight="2"
+                    android:background="@drawable/buttonshape"
+                    android:text="Create"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

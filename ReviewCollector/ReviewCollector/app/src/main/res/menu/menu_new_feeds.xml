@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.pk.reviewcollector.new_feeds">
+    <item
+        android:id="@+id/definestructure"
+        android:orderInCategory="100"
+        android:title="Define Structure"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/modifystructure"
+        android:orderInCategory="100"
+        android:title="Modify Structure"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/deletestructure"
+        android:orderInCategory="100"
+        android:title="Delete Structure"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/viewdelayedgroups"
+        android:orderInCategory="100"
+        android:title="View Delayed Request"
+        app:showAsAction="never" />
+</menu>

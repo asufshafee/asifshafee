@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.pk.reviewcollector.Fragments.Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:text="back"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonshape"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:scrollbars="vertical"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/name"
+        android:text="Muhammad Asif"
+        android:textColor="@color/textcolor"
+        android:gravity="right|center"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="20dp"
+        android:editable="false"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/email"
+        android:textColor="@color/textcolor"
+        android:text="jaani.asif0333@gmail.com"
+        android:gravity="right|center"
+        android:paddingRight="20dp"
+        android:editable="false"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/gropus"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:foregroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:text="Groups"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/joingropus"
+        android:textColor="@android:color/white"
+        android:foregroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:text="Joined Groups"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/editprofile"
+        android:textColor="@android:color/white"
+        android:foregroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:text="Edit Profile"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/review"
+        android:textColor="@android:color/white"
+        android:foregroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:text="Review App"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/lagout"
+        android:textColor="@android:color/white"
+        android:foregroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:text="Lagout"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

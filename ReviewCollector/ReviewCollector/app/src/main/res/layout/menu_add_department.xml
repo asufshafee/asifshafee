@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/fullshadow"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            android:textColor="@color/textcolor"
+            android:textSize="30dp"
+            android:text="Add Department"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/txtdepartmentname"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:hint="Depart Name"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:hint="Depart Description"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/txtdepartmentdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/buttonshape"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/btndepclear"
+                    android:text="clear"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btndepadddepartment"
+                    android:background="@drawable/buttonshape"
+                    android:text="Add"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fullshadow"
+    android:layout_margin="16dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/textcolor"
+            android:textSize="25sp"
+            android:text="We What Justice"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="Group request For the user of barani institute"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="@android:color/white"
+                android:text="Accept"
+                android:layout_height="match_parent" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:text="Delete"
+                android:layout_marginRight="3dp"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape"
+                android:text="Delay"
+                android:layout_marginRight="3dp"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/fullshadow"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:id="@+id/groupname"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:textSize="30dp"
+            android:text="GroupName"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:text="Description"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/groupdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Rules"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/grouprules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Status"
+                android:paddingLeft="20dp"
+                android:textColor="@color/textcolor"
+                android:layout_marginTop="10dp"
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/viewpanding"
+                    android:layout_weight="2"
+                    android:background="@drawable/buttonshape"
+                    android:text="View Panding Requests"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/addmembers"
+                    android:layout_weight="2"
+                    android:background="@drawable/buttonshape"
+                    android:text="Add Members"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/exit"
+                    android:layout_weight="2"
+                    android:background="@drawable/buttonshape"
+                    android:text="Exit"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/viewpol"
+                    android:layout_weight="2"
+                    android:background="@drawable/buttonshape"
+                    android:text="View Polls"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:layout_width="0dp"
+                    android:id="@+id/createpoll"
+                    android:layout_weight="2"
+                    android:background="@drawable/buttonshape"
+                    android:text="Create Poll"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
